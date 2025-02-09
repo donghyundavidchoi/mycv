@@ -29,7 +29,7 @@ const environmentConfig: DataSourceOptions = {
     migrationsRun: false,
   },
   production: {
-    type: 'postgress' as const,
+    type: 'postgres' as const,
     url: process.env.DATABASE_URL,
     entities: ['dist/**/*.entity.js'],
     migrations: ['./migrations/*.js'],
